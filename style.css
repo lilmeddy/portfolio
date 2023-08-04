@@ -351,20 +351,24 @@ position: relative;
     background-color: #250821;
     overflow: hidden;
 }
-.inner p{
+
+.inner p {
     height: 100%;
     object-fit: cover;
     animation: inner 2s ease-in-out infinite;
 }
+
 @keyframes inner {
-    0%{
+    0% {
         border: 3px solid #250821;
     }
-    100%{
+
+    100% {
         border: 3px solid rgb(102, 102, 245);
     }
 }
-#skills{
+
+#skills {
     width: 100%;
     height: 80vh;
     padding: 20px;
@@ -374,33 +378,39 @@ position: relative;
     /* justify-content: space-evenly; */
     /* align-items: center; */
 }
-.skill-text{
+
+.skill-text {
     width: 100%;
     text-align: center;
     /* border: 1px solid red; */
     letter-spacing: 1px;
     margin-bottom: 8px;
 }
-.skill-text span{
+
+.skill-text span {
     text-align: center;
     font-weight: 600;
 }
-.main-skill{
+
+.main-skill {
     width: 85%;
-  display: flex;
-  justify-content: space-around;
-  /* align-items: center; */
-  /* border: 1px solid blue; */
-  margin: auto;
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+    /* border: 1px solid blue; */
+    margin: auto;
 }
-.skill-left{
+
+.skill-left {
     width: 45%;
 }
-.skill-left h3{
+
+.skill-left h3 {
     letter-spacing: 1px;
     margin-bottom: 6px;
 }
-.skill-right{
+
+.skill-right {
     width: 45%;
     /* border: 1px solid green; */
     display: flex;
@@ -408,7 +418,8 @@ position: relative;
     /* justify-content: center; */
     flex-direction: column;
 }
-.skill-right h3{
+
+.skill-right h3 {
     /* margin: auto; */
     text-align: center;
     width: 80%;
@@ -417,17 +428,20 @@ position: relative;
     letter-spacing: 1px;
     /* border: 1px solid rebeccapurple; */
 }
-.skill-bar{
+
+.skill-bar {
     margin-bottom: 20px;
-    
+
 }
-.skill-info{
+
+.skill-info {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 10px;
 }
-.bar{
+
+.bar {
     width: 100%;
     height: 10px;
     background-color: #250821;
@@ -435,7 +449,8 @@ position: relative;
     border-radius: 25px;
     position: relative;
 }
-.bar span{
+
+.bar span {
     /* width: 50%; */
     height: 100%;
     position: absolute;
@@ -444,93 +459,113 @@ position: relative;
     border-radius: 25px;
     box-shadow: 1.5px 2px 2.5px rgb(102, 102, 245);
 }
-.html{
+
+.html {
     width: 90%;
     animation: html 2s;
 }
-.css{
+
+.css {
     width: 85%;
     animation: css 3s;
 }
-.javascript{
+
+.javascript {
     width: 70%;
     animation: js 4s;
 }
-.firebase{
+
+.firebase {
     width: 88%;
     animation: fire 5s;
 }
-.figma{
+
+.figma {
     width: 60%;
     animation: fig 6s;
 }
+
 @keyframes html {
-    0%{
+    0% {
         width: 0;
     }
-    100%{
+
+    100% {
         width: 90%;
     }
 }
+
 @keyframes css {
-    0%{
+    0% {
         width: 0;
     }
-    100%{
+
+    100% {
         width: 85%;
     }
 }
+
 @keyframes js {
-    0%{
+    0% {
         width: 0;
     }
-    100%{
+
+    100% {
         width: 70%;
     }
 }
+
 @keyframes fire {
-    0%{
+    0% {
         width: 0;
     }
-    100%{
+
+    100% {
         width: 88%;
     }
 }
+
 @keyframes fig {
-    0%{
+    0% {
         width: 0;
     }
-    100%{
+
+    100% {
         width: 60%;
     }
 }
-.prof{
+
+.prof {
     width: 80%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 
 }
-.box{
+
+.box {
     width: 50%;
     margin-top: 10px;
     position: relative;
 }
-.prof-text{
+
+.prof-text {
     /* text-align: center; */
     /* color: #fff; */
     font-size: 20px;
 }
-.prof-text h4{
+
+.prof-text h4 {
     font-weight: 400;
     letter-spacing: 1px;
     position: absolute;
     top: 46%;
     left: 52%;
-    transform: translate(-50%,-59%);
+    transform: translate(-50%, -59%);
 
 }
-small{
+
+small {
     display: block;
     font-weight: 600;
     color: #f2f2f2;
@@ -538,7 +573,8 @@ small{
     margin-top: 20px;
     margin-bottom: 10px;
 }
-.circle{
+
+.circle {
     width: 100%;
     height: 100px;
     display: flex;
@@ -547,7 +583,8 @@ small{
     /* border: 2px solid #fff; */
     /* position: relative; */
 }
-.points{
+
+.points {
     width: 2px;
     height: 10px;
     /* background-color: rgb(92, 92, 255); */
@@ -558,28 +595,93 @@ small{
     border-radius: 3px;
     transform: rotate(calc(var(--i)*var(--rot))) translateY(-45px);
     /* transform: ; */
-    
+
 }
-.marked{
+
+.marked {
     animation: point 0.04s linear forwards;
     animation-delay: calc(var(--i)*0.05s);
 }
+
 @keyframes point {
-    0%{
+    0% {
         background-color: #444;
     }
-    100%{
+
+    100% {
         background-color: rgb(102, 102, 245);
         box-shadow: 1.5px 2px 2.5px rgb(102, 102, 245);
     }
 }
-#portfolio{
+
+#portfolio {
     width: 100%;
     height: 80vh;
     padding: 20px;
     background-color: #250821;
 }
-#contact{
+
+.flex {
+    width: 80%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.cont {
+    width: 24%;
+    /* height: 150px; */
+    border: 3px solid #12f2ff;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    border-radius: ;
+}
+
+.cont-img {
+    width: 250px;
+    height: 250px;
+    cursor: pointer;
+    /* overflow: hidden; */
+    /* opacity: 1; */
+}
+
+.over {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), #12f2ff);
+}
+
+.cont:hover .cont-img {
+    transform: scale(1.1);
+}
+
+.cont:hover .over {
+    opacity: 1;
+}
+
+.cont-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* object-fit: fill; */
+}
+
+.cont-text {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    text-align: center;
+}
+
+#contact {
     width: 100%;
     height: 80vh;
     padding: 20px;

@@ -32,7 +32,8 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    border-bottom: 2px solid rgba(83, 72, 72, 0.5);
+    border-bottom: 1px solid transparent;
+    /* border-bottom: 2px solid rgba(83, 72, 72, 0.5); */
     /* margin-bottom: 10px; */
     background-color: #250821;
     letter-spacing: 1px;
@@ -43,7 +44,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 10;
-    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.75);
+    /* box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.75); */
 }
 
 li {
@@ -403,6 +404,7 @@ position: relative;
 .skill-text span {
     text-align: center;
     font-weight: 600;
+    
 }
 
 .main-skill {

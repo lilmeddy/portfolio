@@ -66,3 +66,19 @@ function activeMenu(){
 }
 activeMenu()
 window.addEventListener("scroll",activeMenu)
+
+let observer = new IntersectionObserver((entries)=>{
+    entries.forEach((entry)=>{
+        if(entry.isIntersecting){
+            entry.target.classList.add("show-items");
+        }else{
+            entry.target.classList.remove("show-items");
+        }
+    })
+})
+let scrollScale = document.querySelectorAll(".scroll-scale")
+scrollScale.forEach((el)=>observer.observe(el))
+let scrollBottom = document.querySelectorAll(".scroll-bottom")
+scrollBottom.forEach((el)=>observer.observe(el))
+let scrollTop = document.querySelectorAll(".scroll-top")
+scrollTop.forEach((el)=>observer.observe(el))

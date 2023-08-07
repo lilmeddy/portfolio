@@ -740,3 +740,22 @@ textarea{
     margin-top: 8px;
     padding:8px;
 }
+.scroll-scale{
+    opacity: 0;
+    transform: scale(.9);
+    transition: all 2s;
+}
+.scroll-bottom{
+    opacity: 0;
+    transform: translateY(300px);
+    transition: ease-in 2s;
+}
+.scroll-top{
+    opacity: 0;
+    transform: translateY(-300px);
+    transition: all 3s;
+}
+.show-items{
+    opacity: 1;
+    transform: translateX(0);
+}

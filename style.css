@@ -14,7 +14,17 @@ body {
     height: 100vh;
     background-color: #f2f2f2;
 }
-
+::-webkit-scrollbar{
+    width: 8px;
+    height: 0;
+}
+::-webkit-scrollbar-track{
+    background-color: #221520;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgba(102, 102, 245,0.5);
+    border-radius: 5px;
+}
 header {
     width: 100%;
     height: 50px;
@@ -44,11 +54,13 @@ li {
 a {
     color: #fff;
 }
-
+.active{
+    color: rgb(102, 102, 245);
+}
 #home {
     width: 100%;
-    height: 80vh;
-    padding: 20px;
+    height: 100vh;
+    /* padding: 20px; */
     background-color: #250821;
     color: #fff;
     display: flex;
@@ -205,7 +217,7 @@ position: relative;
 } */
 #about {
     width: 100%;
-    height: 80vh;
+    height: 100vh;
     padding: 20px;
     background-color: #444;
     color: gray;
@@ -304,8 +316,8 @@ position: relative;
 
 #service {
     width: 100%;
-    height: 80vh;
-    padding: 20px;
+    height: 100vh;
+    /* padding: 20px; */
     background-color: #250821;
     color: #fff;
     display: flex;
@@ -317,8 +329,8 @@ position: relative;
 
 .service-box {
     width: 70%;
-    height: 70%;
-    margin-top: 10px;
+    height: 60%;
+    margin-top: 20px;
     /* border: 1px solid black; */
     display: flex;
     justify-content: space-evenly;
@@ -370,8 +382,8 @@ position: relative;
 
 #skills {
     width: 100%;
-    height: 80vh;
-    padding: 20px;
+    height: 100vh;
+    /* padding: 20px; */
     background-color: #444;
     color: gray;
     /* display: flex; */
@@ -380,6 +392,7 @@ position: relative;
 }
 
 .skill-text {
+    
     width: 100%;
     text-align: center;
     /* border: 1px solid red; */
@@ -394,9 +407,10 @@ position: relative;
 
 .main-skill {
     width: 85%;
+    height: 80%;
     display: flex;
     justify-content: space-around;
-    /* align-items: center; */
+    align-items: center;
     /* border: 1px solid blue; */
     margin: auto;
 }
@@ -687,11 +701,40 @@ small {
     left: 10%;
     text-align: center;
 }
-
+.flex-butt button{
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    background-color:  rgb(102, 102, 245);
+    color: #fff;
+    border-radius: 5px;
+}
 #contact {
     width: 100%;
-    height: 80vh;
+    height: 100vh;
     padding: 20px;
     background-color: #444;
     color: gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    width: 50%;
+    margin: auto;
+    /* border: 1px solid green; */
+}
+.inp{
+    width: 100%;
+}
+.inp input, 
+textarea{
+    width: 100%;
+    background-color: #221520;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    margin-top: 8px;
+    padding:8px;
 }

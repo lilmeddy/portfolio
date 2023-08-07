@@ -11,12 +11,12 @@
     <header>
         <nav style="margin-left: 15px;"><span style="color: rgb(102, 102, 245);">M</span>ede</nav>
         <ul class="list">
-            <li><a href="#home" style="color: rgb(102, 102, 245);">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#service">Services</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about" class="active">About</a></li>
+            <li><a href="#service" class="active">Services</a></li>
+            <li><a href="#skills" class="active">Skills</a></li>
+            <li><a href="#portfolio" class="active">Portfolio</a></li>
+            <li><a href="#contact" class="active">Contact</a></li>
         </ul>
         <!-- <nav id="menu"></nav> -->
     </header>
@@ -305,12 +305,26 @@
 </div>
 </div>
 
-<div.cont-butt><button>SEE MORE</button></div.cont-butt>
+<div class="flex-butt"><button>SEE MORE</button></div>
 </section>
 <section id="contact">
-      
+    <div class="skill-text">
+        <span style="color: gray;">ASK ME QUESTION</span>
+        <h3  style="color: rgb(102, 102, 245); margin-top: 8px;">CONTACT ME</h3>
+    </div>
+    <div class="form">
+        <form action="">
+            <div class="inp"><input type="text" placeholder="Your Name"></div>
+            <div class="inp"><input type="email" placeholder="Your Email"></div>
+            <div class="inp"><input type="text" placeholder="Your Address"></div>
+            <div class="inp"><input type="tel" placeholder="Your Number"></div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your message"></textarea>
+        </form>
+    </div>
+    <div class="flex-butt"><button>Send Message</button></div>
 </section>
     </main>
+    <!-- <div class="abs"><button>Home</button></div> -->
 </body>
 </html>
 <script src="script.js"></script>

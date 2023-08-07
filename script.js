@@ -52,5 +52,17 @@ circles.forEach(ele => {
     for(let i=0; i<percent; i++){
         pointMarked[i].classList.add("marked")
     }
-
+     
 })
+
+let menu = document.querySelectorAll("header ul li a");
+let section = document.querySelectorAll("section")
+
+function activeMenu(){
+    let len = section.length
+    while (--len &&  window.scrollY + 90 < section[len].offsetTop) {}
+    menu.forEach(sec => sec.classList.remove("active"))
+    menu[len].classList.add("active")
+}
+activeMenu()
+window.addEventListener("scroll",activeMenu)

@@ -82,4 +82,3 @@ let scrollBottom = document.querySelectorAll(".scroll-bottom")
 scrollBottom.forEach((el)=>observer.observe(el))
 let scrollTop = document.querySelectorAll(".scroll-top")
 scrollTop.forEach((el)=>observer.observe(el))
-
